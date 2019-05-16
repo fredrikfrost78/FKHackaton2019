@@ -18,6 +18,8 @@
 		0C35B756228D503D0015BFF6 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C35B755228D503D0015BFF6 /* MyPageViewController.swift */; };
 		0C35B758228D52BC0015BFF6 /* TableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C35B757228D52BC0015BFF6 /* TableElement.swift */; };
 		0C35B75A228D53E10015BFF6 /* TableElementStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C35B759228D53E10015BFF6 /* TableElementStore.swift */; };
+		0C35B75F228D78780015BFF6 /* StegCounterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C35B75E228D78780015BFF6 /* StegCounterController.swift */; };
+		0C35B761228D7AE80015BFF6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C35B760228D7AE80015BFF6 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		0C35B755228D503D0015BFF6 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		0C35B757228D52BC0015BFF6 /* TableElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableElement.swift; sourceTree = "<group>"; };
 		0C35B759228D53E10015BFF6 /* TableElementStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableElementStore.swift; sourceTree = "<group>"; };
+		0C35B75E228D78780015BFF6 /* StegCounterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StegCounterController.swift; sourceTree = "<group>"; };
+		0C35B760228D7AE80015BFF6 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,9 +114,11 @@
 				0C35B729228D49180015BFF6 /* Main.storyboard */,
 				0C35B759228D53E10015BFF6 /* TableElementStore.swift */,
 				0C35B757228D52BC0015BFF6 /* TableElement.swift */,
+				0C35B760228D7AE80015BFF6 /* Item.swift */,
 				0C35B72C228D49190015BFF6 /* Assets.xcassets */,
 				0C35B72E228D49190015BFF6 /* LaunchScreen.storyboard */,
 				0C35B755228D503D0015BFF6 /* MyPageViewController.swift */,
+				0C35B75E228D78780015BFF6 /* StegCounterController.swift */,
 				0C35B753228D4FC60015BFF6 /* FK Logga.png */,
 				0C35B731228D49190015BFF6 /* Info.plist */,
 			);
@@ -273,7 +279,9 @@
 				0C35B724228D49180015BFF6 /* AppDelegate.swift in Sources */,
 				0C35B756228D503D0015BFF6 /* MyPageViewController.swift in Sources */,
 				0C35B758228D52BC0015BFF6 /* TableElement.swift in Sources */,
+				0C35B761228D7AE80015BFF6 /* Item.swift in Sources */,
 				0C35B75A228D53E10015BFF6 /* TableElementStore.swift in Sources */,
+				0C35B75F228D78780015BFF6 /* StegCounterController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
