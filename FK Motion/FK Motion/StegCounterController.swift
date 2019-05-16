@@ -36,10 +36,9 @@ class StepCounterController: UIViewController {
         let calender = Calendar.current
         let weekOfYear = calender.component(.weekOfYear, from: Date.init(timeIntervalSinceNow: 0))
         myPageLabel.text = "Min sida v."+String(weekOfYear)
-        stepLabel.text = "Steg: Uppdaterar..."
-        
-        distanceLabel.text = "Distans:  Uppdaterar..."
-        stairsLabel.text = "Våningar:  Uppdaterar..."
+        stepLabel.text = "Uppdaterar..."
+        distanceLabel.text = "Uppdaterar..."
+        stairsLabel.text = "Uppdaterar..."
         
         print(String(CMPedometer.isStepCountingAvailable()));
         let formatter = DateFormatter()
@@ -84,10 +83,10 @@ class StepCounterController: UIViewController {
     
     private func setPedometerData(pedData: CMPedometerData)
     {
-        self.stepLabel.text = "Steg: "+String(Int(truncating: pedData.numberOfSteps))
+        self.stepLabel.text = String(Int(truncating: pedData.numberOfSteps))
         
         if let distancee = pedData.distance{
-            self.distanceLabel.text = "Distans: "+String(round(Double(truncating: distancee)))
+            self.distanceLabel.text = String(round(Double(truncating: distancee)))
         }
         //self.distanceLabel.text = "Distans: "+String(Double(truncating: distancee));
         //self.stairsLabel.text = "Våningar: "+String(Double(truncating: pedData.floorsAscended));
