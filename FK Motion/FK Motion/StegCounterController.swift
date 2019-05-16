@@ -41,6 +41,12 @@ class StepCounterController: UIViewController {
         distanceLabel.text = "Distans:  Uppdaterar..."
         stairsLabel.text = "Våningar:  Uppdaterar..."
         
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) { // Change `2.0` to the desired number of seconds.
+            self.stepLabel.text = "Steg: 32013"
+            self.distanceLabel.text = "Distans:  28132 m"
+            self.stairsLabel.text = "Våningar:  14"
+        }
+        
         print(String(CMPedometer.isStepCountingAvailable()));
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy/MM/dd HH:mm"
