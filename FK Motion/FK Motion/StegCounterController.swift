@@ -7,8 +7,10 @@
 //
 
 import UIKit
-import CoreMotion
+import Foundation
 import WatchKit
+import CoreMotion
+import Dispatch
 
 class StepCounterController: UIViewController {
     
@@ -19,6 +21,7 @@ class StepCounterController: UIViewController {
     @IBOutlet weak var stairsLabel: UILabel!
     var item: Item!
     
+    var distance: Double!
     
     // MARK: - blocks
     /// This block will return steps, distance, averagePage, pace, floor ascended, floor dscended
@@ -30,7 +33,37 @@ class StepCounterController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        let calender = Calendar.current
+        let weekOfYear = calender.component(.weekOfYear, from: Date.init(timeIntervalSinceNow: 0))
+        myPageLabel.text = "Min sida v."+String(weekOfYear)
+        stepLabel.text = "Steg: Uppdaterar..."
+        
+        distanceLabel.text = "Distans:  Uppdaterar..."
+        stairsLabel.text = "Våningar:  Uppdaterar..."
+        
         print(String(CMPedometer.isStepCountingAvailable()));
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy/MM/dd HH:mm"
+        let calendar = Calendar(identifier: .gregorian)
+        var dateComponents = DateComponents()
+        dateComponents.year = 2019
+        dateComponents.month = 05
+        dateComponents.day = 13
+        let endDatum = Date()
+        guard let fromDatum = calendar.date(from: dateComponents) else { return () }
+        
+        
+    
+        pedometer.queryPedometerData(from: fromDatum, to: endDatum) { (pedometerData, error) in
+            if error != nil {
+                //errorBlock(error!)
+            } else if let pedData = pedometerData {
+                self.setPedometerData(pedData: pedData)
+                //successBlock(self.numberOfSteps, self.distance, self.averagePace, self.pace, self.floorsAscended, self.floorsDscended, self.cadence, endDatum.secondsInBetweenDate(fromDatum))
+            }
+        }
+        
+        /*
         pedometer.startUpdates(from: Date(), withHandler: { (pedometerData, error) in
             print("startUpdates")
             if let pedData = pedometerData{
@@ -43,21 +76,22 @@ class StepCounterController: UIViewController {
                 self.stepLabel = nil
             }
         })
+ */
         
-        let calender = Calendar.current
-        let weekOfYear = calender.component(.weekOfYear, from: Date.init(timeIntervalSinceNow: 0))
-        myPageLabel.text = "Min sida v."+String(weekOfYear)
-        stepLabel.text = "Steg: 1337"
         
-        distanceLabel.text = "Distanse: 1200"
-        stairsLabel.text = "Trappor: 12"
     }
+    
     
     private func setPedometerData(pedData: CMPedometerData)
     {
-        print("Hej")
-        print(String(Int(truncating: pedData.numberOfSteps)))
-        self.stepLabel.text = String(Int(truncating: pedData.numberOfSteps))
+        self.stepLabel.text = "Steg: "+String(Int(truncating: pedData.numberOfSteps))
+        
+        if let distancee = pedData.distance{
+            self.distanceLabel.text = "Distans: "+String(round(Double(truncating: distancee)))
+        }
+        //self.distanceLabel.text = "Distans: "+String(Double(truncating: distancee));
+        //self.stairsLabel.text = "Våningar: "+String(Double(truncating: pedData.floorsAscended));
+        
         /*if let distancee = pedData.distance{
             self.distance = Double(truncating: distancee)
         }
@@ -80,4 +114,5 @@ class StepCounterController: UIViewController {
             self.cadence = Double(truncating: cadence)
         }*/
     }
+
 }
