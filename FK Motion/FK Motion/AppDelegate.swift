@@ -18,7 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tableElementStore = TableElementStore()
         
         let tabBarController = window!.rootViewController as! UITabBarController
-        let tableElementController = tabBarController.children[0] as! MyPageViewController
+        let navigationBarController = tabBarController.children[0] as! UINavigationController
+        let tableElementController = navigationBarController.children[0] as! MyPageViewController
         //let tableElementController = window!.rootViewController as! MyPageViewController
         tableElementController.tableElementStore = tableElementStore
         // Override point for customization after application launch.

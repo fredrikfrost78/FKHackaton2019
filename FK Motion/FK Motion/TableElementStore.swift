@@ -11,7 +11,7 @@ import UIKit
 class TableElementStore {
     var allTableElements = [TableElement]()
     init() {
-        let steg = TableElement(title: "Steg", matvarde: 1337)
+        let steg = TableElement(title: "Dennis Nilsson", matvarde: "Antal steg: 1337")
         
         allTableElements.append(steg)
     }

@@ -15,6 +15,10 @@ class MyPageViewController: UITableViewController {
         return tableElementStore.allTableElements.count
     }
     
+    func tableView(tableView: UITableView, titleForHeaderinSection section: Int) -> String? {
+        return "Leaderboard"
+    }
+    
     override func tableView(_ tableView: UITableView,
                             cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Create an instance of UITableViewCell, with default appearance
@@ -30,4 +34,5 @@ class MyPageViewController: UITableViewController {
         
         return cell
     }
+    
 }

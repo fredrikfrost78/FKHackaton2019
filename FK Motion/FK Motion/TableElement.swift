@@ -10,9 +10,9 @@ import UIKit
 
 class TableElement: NSObject {
     var title: String
-    var matvarde: Int
+    var matvarde: String
     
-    init(title: String, matvarde: Int) {
+    init(title: String, matvarde: String) {
         self.title = title;
         self.matvarde = matvarde
         super.init()
