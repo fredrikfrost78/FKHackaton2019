@@ -10,4 +10,9 @@ import UIKit
 
 class TableElementStore {
     var allTableElements = [TableElement]()
+    init() {
+        let steg = TableElement(title: "Steg", matvarde: 1337)
+        
+        allTableElements.append(steg)
+    }
 }

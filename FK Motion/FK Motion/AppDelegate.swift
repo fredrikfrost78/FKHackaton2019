@@ -17,7 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let tableElementStore = TableElementStore()
         
-        let tableElementController = window!.rootViewController as! MyPageViewController
+        let tabBarController = window!.rootViewController as! UITabBarController
+        let tableElementController = tabBarController.children[0] as! MyPageViewController
+        //let tableElementController = window!.rootViewController as! MyPageViewController
         tableElementController.tableElementStore = tableElementStore
         // Override point for customization after application launch.
         return true
