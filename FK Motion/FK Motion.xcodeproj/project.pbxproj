@@ -20,6 +20,8 @@
 		0C35B75A228D53E10015BFF6 /* TableElementStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C35B759228D53E10015BFF6 /* TableElementStore.swift */; };
 		0C35B75F228D78780015BFF6 /* StegCounterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C35B75E228D78780015BFF6 /* StegCounterController.swift */; };
 		0C35B761228D7AE80015BFF6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C35B760228D7AE80015BFF6 /* Item.swift */; };
+		0C35B763228DA7BB0015BFF6 /* RestSimulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C35B762228DA7BB0015BFF6 /* RestSimulator.swift */; };
+		0C35B765228DAB670015BFF6 /* LeaderBoardSimulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C35B764228DAB670015BFF6 /* LeaderBoardSimulator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		0C35B759228D53E10015BFF6 /* TableElementStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableElementStore.swift; sourceTree = "<group>"; };
 		0C35B75E228D78780015BFF6 /* StegCounterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StegCounterController.swift; sourceTree = "<group>"; };
 		0C35B760228D7AE80015BFF6 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		0C35B762228DA7BB0015BFF6 /* RestSimulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestSimulator.swift; sourceTree = "<group>"; };
+		0C35B764228DAB670015BFF6 /* LeaderBoardSimulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardSimulator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				0C35B723228D49180015BFF6 /* AppDelegate.swift */,
+				0C35B762228DA7BB0015BFF6 /* RestSimulator.swift */,
+				0C35B764228DAB670015BFF6 /* LeaderBoardSimulator.swift */,
 				0C35B727228D49180015BFF6 /* SecondViewController.swift */,
 				0C35B729228D49180015BFF6 /* Main.storyboard */,
 				0C35B759228D53E10015BFF6 /* TableElementStore.swift */,
@@ -277,8 +283,10 @@
 			files = (
 				0C35B728228D49180015BFF6 /* SecondViewController.swift in Sources */,
 				0C35B724228D49180015BFF6 /* AppDelegate.swift in Sources */,
+				0C35B765228DAB670015BFF6 /* LeaderBoardSimulator.swift in Sources */,
 				0C35B756228D503D0015BFF6 /* MyPageViewController.swift in Sources */,
 				0C35B758228D52BC0015BFF6 /* TableElement.swift in Sources */,
+				0C35B763228DA7BB0015BFF6 /* RestSimulator.swift in Sources */,
 				0C35B761228D7AE80015BFF6 /* Item.swift in Sources */,
 				0C35B75A228D53E10015BFF6 /* TableElementStore.swift in Sources */,
 				0C35B75F228D78780015BFF6 /* StegCounterController.swift in Sources */,

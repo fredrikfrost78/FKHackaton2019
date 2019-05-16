@@ -10,9 +10,18 @@ import UIKit
 
 class TableElementStore {
     var allTableElements = [TableElement]()
+    let leaderBordSim = LeardBoardSimulator()
+
     init() {
-        let steg = TableElement(title: "Dennis Nilsson", matvarde: "Antal steg: 1337")
+        //var res: Int
+        allTableElements = leaderBordSim.getLeaderBoard()
+        //print("Result is \(res)" )
+        //let steg = TableElement(title: "Dennis Nilsson", matvarde: "Antal steg: 1337")
         
-        allTableElements.append(steg)
+        //allTableElements.append(steg)
+    }
+    
+    func updateLeaderBoard() {
+        allTableElements = leaderBordSim.getLeaderBoard()
     }
 }
