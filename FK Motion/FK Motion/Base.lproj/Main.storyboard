@@ -32,14 +32,14 @@
                                         <rect key="frame" x="0.0" y="91" width="398" height="57"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" text="Steg:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWl-ZP-YyL" userLabel="Steg">
-                                                <rect key="frame" x="0.0" y="0.0" width="182" height="57"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="206" height="57"/>
                                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="30"/>
                                                 <color key="textColor" red="0.0" green="0.48627450979999998" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" text="12345" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yt-bD-XJo">
-                                                <rect key="frame" x="182" y="0.0" width="216" height="57"/>
-                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="90"/>
+                                                <rect key="frame" x="206" y="0.0" width="192" height="57"/>
+                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="80"/>
                                                 <color key="textColor" red="0.0" green="0.48627450980392156" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -50,14 +50,14 @@
                                         <rect key="frame" x="0.0" y="169" width="398" height="35"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" text="Distans:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCp-Uq-dPK">
-                                                <rect key="frame" x="0.0" y="0.0" width="182" height="35"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="206" height="35"/>
                                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="30"/>
                                                 <color key="textColor" red="0.0" green="0.48627450979999998" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" text="12345" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTK-Ic-eqx">
-                                                <rect key="frame" x="182" y="0.0" width="216" height="35"/>
-                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="90"/>
+                                                <rect key="frame" x="206" y="0.0" width="192" height="35"/>
+                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="80"/>
                                                 <color key="textColor" red="0.0" green="0.48627450980392156" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -74,7 +74,7 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" text="12" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpD-zW-csK">
                                                 <rect key="frame" x="103.5" y="0.0" width="294.5" height="35"/>
-                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="90"/>
+                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="80"/>
                                                 <color key="textColor" red="0.0" green="0.48627450980392156" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -136,9 +136,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageView key="tableHeaderView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Val.png" highlightedImage="Val" highlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" id="Nly-nX-L3W">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="119"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="steg" textLabel="bE4-bF-ysV" detailTextLabel="lWZ-wF-UIn" style="IBUITableViewCellStyleValue1" id="cXb-x3-axl">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="147" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cXb-x3-axl" id="fyb-uZ-sTO">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -167,7 +171,7 @@
                             <outlet property="delegate" destination="Ala-zM-x2u" id="NDA-VT-5Db"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="1jF-VV-pIO"/>
+                    <navigationItem key="navigationItem" id="yuq-wY-yyc"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="im6-iQ-7QX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -194,7 +198,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Val" width="958" height="346"/>
+        <image name="Val.png" width="479" height="173"/>
         <image name="icons8-leaderboard-filled-50.png" width="37.5" height="37.5"/>
-        <image name="icons8-person-64.png" width="30" height="30"/>
+        <image name="icons8-person-64.png" width="48" height="48"/>
     </resources>
 </document>

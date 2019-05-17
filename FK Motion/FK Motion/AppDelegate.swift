@@ -22,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tableElementController = navigationBarController.children[0] as! MyPageViewController
         //let tableElementController = window!.rootViewController as! MyPageViewController
         tableElementController.tableElementStore = tableElementStore
+        
+        RunLoop.current.run(until: NSDate(timeIntervalSinceNow:5) as Date)
         // Override point for customization after application launch.
         return true
     }
