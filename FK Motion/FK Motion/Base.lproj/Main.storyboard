@@ -136,13 +136,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <imageView key="tableHeaderView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Val.png" highlightedImage="Val" highlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" id="Nly-nX-L3W">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="119"/>
+                        <imageView key="tableHeaderView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="titleLeaderboard4.png" highlightedImage="titleLeaderboard4.png" highlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" id="Nly-nX-L3W">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="162"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="steg" textLabel="bE4-bF-ysV" detailTextLabel="lWZ-wF-UIn" style="IBUITableViewCellStyleValue1" id="cXb-x3-axl">
-                                <rect key="frame" x="0.0" y="147" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="190" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cXb-x3-axl" id="fyb-uZ-sTO">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -198,9 +198,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Val" width="958" height="346"/>
-        <image name="Val.png" width="479" height="173"/>
         <image name="icons8-leaderboard-filled-50.png" width="37.5" height="37.5"/>
         <image name="icons8-person-64.png" width="48" height="48"/>
+        <image name="titleLeaderboard4.png" width="483" height="184"/>
     </resources>
 </document>
