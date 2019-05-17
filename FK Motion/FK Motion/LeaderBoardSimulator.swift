@@ -13,13 +13,16 @@ class LeardBoardSimulator {
     var leaderBoard = [TableElement]()
     
     init() {
-        var personInfo = TableElement(title: "Dennis Nilsson", matvarde: "2013")
+        var personInfo = TableElement(title: "Dennis", matvarde: "2013")
         leaderBoard.append(personInfo)
-        personInfo = TableElement(title: "Fredrik Frost", matvarde: "1236")
+        personInfo = TableElement(title: "Helena", matvarde: "1335")
         leaderBoard.append(personInfo)
-        personInfo = TableElement(title: "Lars Kallin", matvarde: "1135")
+        personInfo = TableElement(title: "Catarina", matvarde: "1300")
         leaderBoard.append(personInfo)
-
+       personInfo = TableElement(title: "Lars", matvarde: "1135")
+        leaderBoard.append(personInfo)
+        personInfo = TableElement(title: "Fredrik", matvarde: "1236")
+        leaderBoard.append(personInfo)
     }
     
     @discardableResult func getLeaderBoard() -> [TableElement] {
