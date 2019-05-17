@@ -13,11 +13,11 @@ class LeardBoardSimulator {
     var leaderBoard = [TableElement]()
     
     init() {
-        var personInfo = TableElement(title: "Dennis Nilsson", matvarde: "1337")
+        var personInfo = TableElement(title: "Dennis Nilsson", matvarde: "2013")
         leaderBoard.append(personInfo)
-        personInfo = TableElement(title: "Fredrik Frost", matvarde: "1336")
+        personInfo = TableElement(title: "Fredrik Frost", matvarde: "1236")
         leaderBoard.append(personInfo)
-        personInfo = TableElement(title: "Lars Kallin", matvarde: "1335")
+        personInfo = TableElement(title: "Lars Kallin", matvarde: "1135")
         leaderBoard.append(personInfo)
 
     }
@@ -32,7 +32,7 @@ class LeardBoardSimulator {
         
         print("getLeaderBoard")
         for person in leaderBoard {
-            let nyttVarde = Int(person.matvarde)! + Int.random(in: 0 ..< 200)
+            let nyttVarde = Int(person.matvarde)! + Int.random(in: 0 ..< 1)
             print(person.matvarde + " " + String(nyttVarde))
             person.matvarde = String(nyttVarde)
         }
