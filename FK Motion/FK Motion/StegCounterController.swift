@@ -35,7 +35,7 @@ class StepCounterController: UIViewController {
         
         let calender = Calendar.current
         let weekOfYear = calender.component(.weekOfYear, from: Date.init(timeIntervalSinceNow: 0))
-        myPageLabel.text = "Min sida v."+String(weekOfYear)
+        myPageLabel.text = "Min sida v "+String(weekOfYear)
         stepLabel.text = ""
         distanceLabel.text = ""
         stairsLabel.text = ""
