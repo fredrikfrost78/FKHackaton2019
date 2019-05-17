@@ -40,7 +40,7 @@ class StepCounterController: UIViewController {
         distanceLabel.text = ""
         stairsLabel.text = ""
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) { // Change `2.0` to the desired number of seconds.
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { // Change `2.0` to the desired number of seconds.
             self.stepLabel.text = "2013"
             self.distanceLabel.text = "28132"
             self.stairsLabel.text = "14"
