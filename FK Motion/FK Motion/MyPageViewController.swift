@@ -32,7 +32,16 @@ class MyPageViewController: UITableViewController {
         cell.textLabel?.text = item.title
         cell.detailTextLabel?.text = "\(item.matvarde)"
         
+        print(indexPath)
+        
         return cell
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("viewWillAppear")
+        
+        tableElementStore.updateLeaderBoard()
+    }
+
 }

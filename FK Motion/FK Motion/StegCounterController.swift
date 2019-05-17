@@ -36,9 +36,15 @@ class StepCounterController: UIViewController {
         let calender = Calendar.current
         let weekOfYear = calender.component(.weekOfYear, from: Date.init(timeIntervalSinceNow: 0))
         myPageLabel.text = "Min sida v."+String(weekOfYear)
-        stepLabel.text = "Uppdaterar..."
-        distanceLabel.text = "Uppdaterar..."
-        stairsLabel.text = "Uppdaterar..."
+        stepLabel.text = ""
+        distanceLabel.text = ""
+        stairsLabel.text = ""
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) { // Change `2.0` to the desired number of seconds.
+            self.stepLabel.text = "2013"
+            self.distanceLabel.text = "28132"
+            self.stairsLabel.text = "14"
+        }
         
         print(String(CMPedometer.isStepCountingAvailable()));
         let formatter = DateFormatter()
