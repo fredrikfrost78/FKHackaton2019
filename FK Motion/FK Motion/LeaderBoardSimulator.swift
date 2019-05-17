@@ -21,7 +21,7 @@ class LeardBoardSimulator {
         leaderBoard.append(personInfo)
        personInfo = TableElement(title: "Lars", matvarde: "1135")
         leaderBoard.append(personInfo)
-        personInfo = TableElement(title: "Fredrik", matvarde: "1236")
+        personInfo = TableElement(title: "Fredrik", matvarde: "936")
         leaderBoard.append(personInfo)
     }
     
